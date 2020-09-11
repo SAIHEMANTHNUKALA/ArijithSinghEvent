@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+  display: none;
+}
+
+.image-spo {
+  width: 20%;
+}
+
+html,
+body {
+  background-color: #fff;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  position: relative;
+}
+
+header {
+  background-image: url(./images/arijithsinghedit2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 98vh;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+  margin-top: -50px;
+}
+
+/* .h1_logo {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 300px;
+  padding-left: 438px;
+  color: #fff;
+  font-size: 290%;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+} */
+.nav {
+  position: relative;
+  /* width: 100%;
+  height: auto; */
+  /* width: 100%; */
+  /* height: 400px; */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.nav_list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav_links {
+  position: absolute;
+  bottom: 580px;
+  right: 20px;
+}
+
+.nav_links_link {
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.nav_links_link:hover {
+  color: #e67e22;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e67e22;
+}
+
+/* section  */
+.section_about {
+  top: 100px;
+}
+
+/* @keyframes bottomToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+} */
+
+.p-ele {
+  line-height: 40px;
+}
+
+h2 {
+  border-top: px;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.p-ele {
+  margin: 100px;
+}
+
+/* note */
+
+.note {
+  text-align: center;
+}
+
+.Term_and_conditions {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.strong_offer {
+  color: black;
+}
+
+.offer_section {
+  background-color: #ef8172;
+  color: white;
+  padding: 100px;
+  line-height: 40px;
+}
+
+.offer_edit {
+  margin: 100px;
+}
+
+/* pricing */
+
+.row {
+  padding: 100px;
+}
+
+#pricing h2 {
+  padding: 10px;
+}
+
+/* #offers .h2_offers {
+  margin-left: 450px;
+} */
+
+/* sponcers */
+.sponsers {
+  background-color: #ef8172;
+}
+
+.edit_sponsers {
+  padding: 100px;
+}
+
+.image-spo {
+  padding: 12px;
+}
+
+/* footer */
+
+#footer {
+  margin: 7% 15%;
+  text-align: center;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+/* media queries */
+
+.img_des {
+  width: 65%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 95vp;
+    width: 100%;
+    display: flex;
+  }
+
+  /* .menu-btn {
+    display: flex;
+  } */
+  /* .menu-btn:hover {
+    opacity: 0.5;
+  } */
+
+  /* .navbar ul.nav_list {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 300px;
+    padding: 10px;
+    bottom: 10px;
+  } */
+  .navbar ul.nav_list li.nav_links_link {
+    background-color: #f2f2f2;
+    padding: 100px;
+  }
+
+  .nav_links_link {
+    padding: 10px;
+  }
+
+  #offers .offer_edit {
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    margin: 15px;
+    padding: 0;
+    /* line-height: 40px; */
+    /* line-break: auto; */
+    font-weight: bold;
+  }
+
+  .image-spo {
+    width: 50%;
+    margin-left: 80px;
+  }
+}
